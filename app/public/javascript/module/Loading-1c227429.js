@@ -1,0 +1,1 @@
+import{R as e}from"./index-80ae32d7.js";var a=function(){return e.createElement("div",{id:"loading"},e.createElement("div",{className:"loading"},e.createElement("div",{className:"loader-1 center"},e.createElement("span",null))))};export{a as L};

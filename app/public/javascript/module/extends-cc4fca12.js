@@ -1,0 +1,1 @@
+import{c as r}from"./index-80ae32d7.js";var t=r(function(r){function t(){return r.exports=t=Object.assign||function(r){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var o in n)Object.prototype.hasOwnProperty.call(n,o)&&(r[o]=n[o])}return r},t.apply(this,arguments)}r.exports=t});export{t as _};

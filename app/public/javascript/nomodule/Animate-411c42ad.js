@@ -1,0 +1,1 @@
+System.register(["./index-b0513f57.js","./extends-0c7a6a58.js"],function(e){"use strict";var n,t;return{setters:[function(e){n=e.R},function(e){t=e._}],execute:function(){e("A",function(e){return n.createElement("a",t({},e,{onClick:function(n){return function(n){n.preventDefault(),setTimeout(function(){e.onClick&&e.onClick()},600)}(n)},className:"ripple"}),e.children)})}}});

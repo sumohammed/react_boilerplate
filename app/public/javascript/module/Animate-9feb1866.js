@@ -1,0 +1,1 @@
+import{R as e}from"./index-80ae32d7.js";import{_ as n}from"./extends-cc4fca12.js";var t=function(t){return e.createElement("a",n({},t,{onClick:function(e){return function(e){e.preventDefault(),setTimeout(function(){t.onClick&&t.onClick()},600)}(e)},className:"ripple"}),t.children)};export{t as A};

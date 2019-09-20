@@ -1,0 +1,1 @@
+import{R as e}from"./index-80ae32d7.js";import{_ as a}from"./extends-cc4fca12.js";import{_ as r}from"./objectWithoutProperties-234758e1.js";var s=function(s){var t=s.classname,c=s.children,o=r(s,["classname","children"]);return e.createElement("div",a({className:"page ".concat(t||"")},o),c)};export{s as P};
