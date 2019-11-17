@@ -1,0 +1,12 @@
+ //////////////////////////////////////////////
+ 
+ <div className="rowOne" key= onClick={() => this.handleClick(item)}>
+                                            {el.number}
+                                          </div>
+
+
+                                            handleClick = event => {
+    console.log(event.currentTarget)
+   }
+
+   ///////////////////////////////////////////////////
