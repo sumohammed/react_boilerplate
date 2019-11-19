@@ -1,12 +1,16 @@
 import React, { Component } from "react";
-import {Link} from "@reach/router";
+import {navigate} from "@reach/router";
+import { confirmAlert } from 'react-confirm-alert'; 
 
 import Step1 from './registrationComp/step1';
 import Step2 from './registrationComp/step2';
 import Step3 from './registrationComp/step3';
+import Step4 from './registrationComp/step4';
 import Controls from './registrationComp/buttonControls';
 
 import "../assets/stylesheets/register.css";
+import 'react-confirm-alert/src/react-confirm-alert.css'; 
+
 
 
 class Register extends Component {
@@ -14,10 +18,18 @@ class Register extends Component {
     super(props)
     this.state = {
       currentStep: 1,
-      phone_country:  '',
       telphone: '',
       country: '+233', 
-      flexDir:'row-reverse'
+      flexDir:'row-reverse',
+
+      sentVCode:  '',
+      receivedVCode:  '',
+      firstName:  '',
+      lastName:  '',
+      gender:  'male',
+      dateOfbirth:  '',
+      email:  '',
+      password:  '',
     }
   }
 
@@ -56,6 +68,15 @@ class Register extends Component {
   _next = () => {
     let currentStep = this.state.currentStep
     currentStep = currentStep >= 2? 3: currentStep + 1
+    this.setState({
+      currentStep: currentStep
+    })
+    this.changeDivDir();
+  }
+
+  _PersonaltoLoginD = () => {
+    let currentStep = this.state.currentStep
+    currentStep = currentStep >= 3? 4: currentStep + 1
     this.setState({
       currentStep: currentStep
     })
@@ -104,15 +125,32 @@ class Register extends Component {
     return null;
   }
 
+  alert = () => {
+    confirmAlert({
+      title: 'Leave',
+      message: 'Are you sure you to cancel registration?',
+      buttons: [
+        {
+          label: 'Yes',
+          onClick: () =>  navigate("/login")
+        },
+        {
+          label: 'No',
+          onClick: () => null
+        }
+      ]
+    });
+  };
+
   render() {
 
   
     return (
-      
+        
         <main>
           <div className="main--iner">
                   <div className="registerP--sec--main registerP--Logo-area">
-                          <span className="registerP--logo svvg ">
+                          <span className="registerP--logo svvg " onClick={this.alert}>
                                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#0c0a0a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H6M12 5l-7 7 7 7"/></svg>
                           </span>             
                   </div>
@@ -134,10 +172,22 @@ class Register extends Component {
                                   />
 
                                  <Step3 
+                                    currentStep  ={this.state.currentStep} 
+                                    handleChange ={this.handleChange}
+                                    firstName    ={this.state.firstName}
+                                    lastName     ={this.state.lastName}
+                                    gender       ={this.state.gender}
+                                    dateOfbirth  ={this.state.dateOfbirth}
+                                    next         ={this._PersonaltoLoginD}
+                                  />
+
+                                  <Step4 
                                     currentStep={this.state.currentStep} 
                                     handleChange={this.handleChange}
-                                    
-                                  />
+                                    email       ={this.state.email}
+                                    password    ={this.state.password}
+                                    previous={this._prev} 
+                                  />                              
                                  
                                  <Controls  currentStep={this.state.currentStep} flexDir={this.state.flexDir} previous={this.previousButton()} next={this.nextButton()} />
                                

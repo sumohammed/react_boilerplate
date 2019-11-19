@@ -122,12 +122,13 @@ div.fogotP--fields div
   font-size: 28px;
   display: flex;
   justify-content: center;
-  margin: 20px 0 10px;
+  margin: 20px 0 20px;
 }
 .fogotP--logo.txt-sm {
   font-size: 11px;
   display: flex;
   font-weight: 500;
+  justify-content: center;
   color: #77838f;
 }
 

@@ -292,6 +292,8 @@ i {
     padding: 0 var(--uiFieldPaddingRight) 0 var(--uiFieldPaddingLeft);
     border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColor);
     color: var(--dark);  
+    
+    transition: 1s;
   }
   
   .a-field__input::-webkit-input-placeholder{
@@ -596,6 +598,7 @@ i {
     display: -ms-flexbox;
     display: flex;
     height: 55px;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -639,3 +642,31 @@ i {
   /* .step.finish {
     background-color: #4CAF50;
   } */
+
+
+  .personalD--field-wrapper{
+    margin-top: 25px;
+  }
+  .personalD--field-select{
+    width: 100%;
+    transition: 1s;
+    font-weight: 400 !important;
+    border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColor);
+  }
+
+  .personalD--field-InputDate{
+    width: 100%;
+    transition: 1s;
+    border: none;
+    border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColor);
+  } 
+  .wwew > .a-field__label{
+    bottom: calc(50% - -1.3em) !important;
+  }
+
+
+  .personalD--field-wrapper.finalize{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
