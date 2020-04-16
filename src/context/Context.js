@@ -4,7 +4,8 @@ import { types } from "../utils";
 export const initialState = {
   theme: {
     theme: true
-  }
+  },
+  name: "Osborn"
 };
 
 export function reducer(state, action) {
@@ -12,6 +13,11 @@ export function reducer(state, action) {
     case types.SET_THEME:
       return Object.assign({}, state, {
         theme: { ...(action.payload || []) }
+      });
+
+    case types.SET_NAME:
+      return Object.assign({}, state, {
+        name: action.payload || ""
       });
 
     default:

@@ -1,1 +1,0 @@
-System.register(["./index-b0513f57.js"],function(e){"use strict";var t;return{setters:[function(e){t=e.R}],execute:function(){e("L",function(){return t.createElement("div",{id:"loading"},t.createElement("div",{className:"loading"},t.createElement("div",{className:"loader-1 center"},t.createElement("span",null))))})}}});
