@@ -1,0 +1,406 @@
+main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+}
+
+.main--iner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.loginP--sec--main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+}
+
+.loginP--sec--main.logo{
+    justify-content: center;
+    align-items: center;
+}
+
+.loginP--sec--main.details{
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.loginP--sec--main.middle{
+    justify-content: space-between;    
+}
+
+
+.loginP--li
+{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--dark);
+}
+
+.loginP--li-s
+{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--dark);
+}
+
+.loginP--Logo-area{
+    justify-content: center;
+    align-items: center;
+}
+
+div.loginP--fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+div.loginP--fields div
+{   width:85%;
+    padding: 10px 0px;
+}
+
+
+.loginP--btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginP--fields-btn-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.loginP--details-btn-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+
+/* .................... */
+.login--btn{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.registe-pane--btn{
+    font-size: 0.85rem;
+    color:#ADB4BF ;
+}
+
+.registe-pane--btn span{   
+    color:var(--dark) ;
+    font-weight:600;
+}
+
+/* ----------------------- text */
+
+.loginP--logo {
+    width: 90%;
+    font-size: 55px;
+    color:var(--dark);
+    font-weight: 600;
+}
+.logo-text--w {
+    font-weight: 900;
+    color: var(--white);
+}
+
+.text--fon{
+    /* font-family: var(--font-text); */
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* =========================colors ============== */
+
+.ldc
+{
+    color: var(--dark);
+}
+
+.ldc--whi
+{
+    color: var(--white);
+}
+
+.ldc--dark
+{
+    color: var(--dark);
+}
+
+.fabi {
+    width: 60px;
+    height: 60px;
+    background-color: var(--dark);
+    border-radius: 50%;
+    font-size: 25px;
+    /* line-height: 67px; */
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+ 
+
+/*======----- impu seing--==============  */
+
+.field{
+    --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+  }
+  
+  .field__input{ 
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    font-family: inherit;
+    font-size: 1em;
+  }
+  
+  .field__input:focus::-webkit-input-placeholder{
+    color: var(--uiFieldPlaceholderColor);
+  }
+  
+  .field__input:focus::-moz-placeholder{
+    color: var(--uiFieldPlaceholderColor);
+    opacity: 1;
+  }
+  
+  /*
+  =====
+  LEVEL 2. CORE STYLES
+  =====
+  */
+  
+  .a-field{
+    display: inline-block;
+  }
+  
+  .a-field__input{ 
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .a-field__input:focus{
+    outline: none;
+  }
+  
+  /*
+  =====
+  LEVEL 3. PRESENTATION STYLES
+  =====
+  */
+  
+  /* a-field */
+  
+  .a-field{
+    --uiFieldHeight: var(--fieldHeight, 40px);  
+    --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+    --uiFieldBorderColor: var(--fieldBorderColor);
+  
+    --uiFieldFontSize: var(--fieldFontSize, 1em);
+    --uiFieldHintFontSize: var(--fieldHintFontSize, 0.9em);
+  
+    --uiFieldPaddingRight: var(--fieldPaddingRight, 0);
+    --uiFieldPaddingBottom: var(--fieldPaddingBottom, 15px);
+    --uiFieldPaddingLeft: var(--fieldPaddingLeft, 0px);   
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    font-size: var(--uiFieldFontSize);
+    padding-top: 1em;  
+  }
+  
+  .a-field__input{
+    height: var(--uiFieldHeight);
+    padding: 0 var(--uiFieldPaddingRight) 0 var(--uiFieldPaddingLeft);
+    border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColor);
+    color: var(--dark);  
+  }
+  
+  .a-field__input::-webkit-input-placeholder{
+    opacity: 0;
+    transition: opacity .2s ease-out;
+  }
+  
+  .a-field__input::-moz-placeholder{
+    opacity: 0;
+    transition: opacity .2s ease-out;
+  }
+  
+  .a-field__input:not(:placeholder-shown) ~ .a-field__label-wrap .a-field__label{
+    opacity: 0;
+    bottom: var(--uiFieldPaddingBottom);
+  }
+  
+  .a-field__input:focus::-webkit-input-placeholder{
+    opacity: 1;
+    transition-delay: .2s;
+  }
+  
+  .a-field__input:focus::-moz-placeholder{
+    opacity: 1;
+    transition-delay: .2s;
+  }
+  
+  .a-field__label-wrap{
+    box-sizing: border-box;
+    width: 100%;
+    height: var(--uiFieldHeight);	
+  
+    pointer-events: none;
+    cursor: text;
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .a-field__label{
+    position: absolute;
+    left: var(--uiFieldPaddingLeft);
+    bottom: calc(50% - .5em);
+  
+    line-height: 1;
+    font-size: var(--uiFieldHintFontSize);
+  
+    pointer-events: none;
+    transition: bottom .2s cubic-bezier(0.9,-0.15, 0.1, 1.15), opacity .2s ease-out;
+    will-change: bottom, opacity;
+    color: var(--dark);
+  }
+  
+  .a-field__input:focus ~ .a-field__label-wrap .a-field__label{
+    opacity: 1;
+    bottom: var(--uiFieldHeight);
+  }
+  
+  /* a-field_a1 */
+  
+  .fa-fw {
+    text-align: center;
+    width: 1.25em;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+  .a-field_a1 .a-field__input{
+    transition: border-color .2s ease-out;
+    will-change: border-color;
+  }
+  
+  .a-field_a1 .a-field__input:focus{
+    border-color: var(--fieldBorderColorActive);
+  }
+  
+  /* a-field_a2 */
+  
+  .a-field_a2 .a-field__label-wrap::after{
+    content: "";
+    box-sizing: border-box;
+    width: 0;
+    height: var(--uiFieldBorderWidth);
+    background-color: var(--fieldBorderColorActive);
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;  
+  
+    will-change: width;
+    transition: width .285s ease-out;
+  }
+  
+  .a-field_a2 .a-field__input:focus ~ .a-field__label-wrap::after{
+    width: 100%;
+  }
+  
+  /* a-field_a3 */
+  
+  .a-field_a3{
+    padding-top: 1.5em;
+  }
+  
+  .a-field_a3 .a-field__label-wrap::after{
+    content: "";
+    box-sizing: border-box;
+    width: 100%;
+    height: 0;
+  
+    opacity: 0;
+    border: var(--uiFieldBorderWidth) solid var(--fieldBorderColorActive);
+  
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  
+    will-change: opacity, height;
+    transition: height .2s ease-out, opacity .2s ease-out;
+  }
+  
+  .a-field_a3 .a-field__input:focus ~ .a-field__label-wrap::after{
+    height: 100%;
+    opacity: 1;
+  }
+  
+  .a-field_a3 .a-field__input:focus ~ .a-field__label-wrap .a-field__label{
+    bottom: calc(var(--uiFieldHeight) + .5em);
+  }
+  
+  /*
+  =====
+  LEVEL 4. SETTINGS
+  =====
+  */
+  
+  .field{
+    --fieldBorderColor: #d1d1d1;
+    --fieldBorderColorActive: var(--dark);
+  }
+
+  
+  .field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+    color:#0000009e;
+  }
+
+  .field-icon1 {
+    float: left;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+    color:var(--dark);
+  }
