@@ -42,7 +42,7 @@
     "postcss-cssnext": "^3.1.0",
     "postcss-nested": "^4.1.2",
     "postcss-simple-vars": "^5.0.2",
-    "rollup": "^1.21.2",
+    "rollup": "^2.79.2",
     "rollup-plugin-alias": "^1.5.2",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-brotli": "^1.1.0",
